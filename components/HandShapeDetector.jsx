@@ -20,12 +20,6 @@ const HandShapeDetector = ({ onGestureChange, highlight }) => {
         const pinkyExtended = isFingerExtended(landmarks[17], landmarks[18], landmarks[20]);
         const thumbExtended = isFingerExtended(landmarks[1], landmarks[2], landmarks[4]);
 
-        console.log('indexExtended', indexExtended);
-        console.log('middleExtended', middleExtended);
-        console.log('ringExtended', ringExtended);
-        console.log('pinkyExtended', pinkyExtended);
-        console.log('thumbExtended', thumbExtended);
-
         if (pinkyExtended && thumbExtended && !indexExtended && !middleExtended && !ringExtended) {
             return 'Phone call';
         } else if (middleExtended && ringExtended && pinkyExtended && !indexExtended && !thumbExtended) {
