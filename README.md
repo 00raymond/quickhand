@@ -24,7 +24,7 @@ Below is the core snippet that processes the hand landmarks to calculate which g
 ```javascript
 const detectGesture = (landmarks) => {
   if (!landmarks || landmarks.length < 21) return 'Unknown';
-  // Helper: determines if a finger is extended based on the vertical difference
+
   const isFingerExtended = (mcp, pip, tip) => (pip.y - tip.y) > 0.1;
 
   const indexExtended = isFingerExtended(landmarks[5], landmarks[6], landmarks[8]);
