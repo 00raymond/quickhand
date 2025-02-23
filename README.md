@@ -2,6 +2,8 @@
 
 Quickhand is a real-time gesture recognition game that uses Mediapipe to detect your hand gestures. The app leverages Mediapipe Hands to extract 21 landmarks from your webcam feed and then runs an algorithm to determine which gesture you’re making. In the game, a random target gesture is displayed and when you match it, you score points.
 
+Use npm install & npm run dev to run it locally.
+
 ## How It Works
 
 1. **Hand Detection:**  
