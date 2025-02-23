@@ -34,3 +34,6 @@ const detectGesture = (landmarks) => {
   const ringExtended = isFingerExtended(landmarks[13], landmarks[14], landmarks[16]);
   const pinkyExtended = isFingerExtended(landmarks[17], landmarks[18], landmarks[20]);
   const thumbExtended = isFingerExtended(landmarks[1], landmarks[2], landmarks[4]);
+```
+
+![Quickhand Screenshot](public/hand_landmarks.png)
